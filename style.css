@@ -1,0 +1,159 @@
+* {
+  padding: 0;
+  margin: 0;
+  border: none;
+  list-style: none;
+  box-sizing: border-box;
+}
+
+body,
+button,
+select,
+input,
+textarea,
+select,
+p {
+  font-family: "Inter", sans-serif;
+}
+
+body {
+  background-color: #f2f2f2;
+}
+
+header {
+  background-color: #fff;
+  height: 5rem;
+  box-shadow: 0.1rem 0.1rem 0.2rem #999999, 0.1rem 0.1rem 0.2rem #999999;
+}
+
+header #navbar {
+  display: flex;
+  /* * justify-content alinha os elementos separando-os ao maximo horizontamente, assim o nome permance a direita e itens do menu a esquerda */
+  justify-content: space-between;
+  /* * align-items alinha na vertical todos os itens de navbar, necessario para o nome alinhar com os demais itens*/
+  align-items: center;
+
+  /* * padding cima baixo 0 e laterais 2rem (1rem = 16px) para dar o espacamento lateral nos elementos ajudando na proporcao */
+  padding: 0 2.5rem;
+  /* * max-width aplicado para que em telas maiores (tela 4k por ex)o elemento nao fique desproporciona */
+  max-width: 1300px;
+  /* * com max-width aplicado, se faz necessario aplicar um margin especifico pra centralizar o elemento, auto nas laterais forca centralizacao do elemento */
+  margin: 0 auto;
+  height: 5rem;
+}
+
+header #navbar .navbrand {
+  text-decoration: none;
+  font-weight: 700;
+  color: #95d161;
+  font-size: 1.3rem;
+}
+
+header #navbar .navlist {
+  /* * navlist eh o pai de navitens, logo, ao aplicar display: flex no pai, os filhos ficam um ao lado do outro */
+  display: flex;
+  align-items: center;
+  /* * gap adiciona espaco entre os elementos de navlist */
+  gap: 2.5rem;
+}
+
+header #navbar .navlist .navitens a {
+  text-decoration: none;
+  color: #999999;
+  font-size: 1.3rem;
+  font-weight: 500;
+}
+
+header #navbar .navlist .navitens a:hover {
+  transition: color 0.5s;
+  color: #4d4d4d;
+}
+
+button {
+  width: 90px;
+  height: 30px;
+  font-weight: 500;
+  color: #999999;
+  font-size: 1.3rem;
+  border-radius: 0.8rem;
+  box-shadow: 0.1rem 0.1rem 0.2rem 0.1rem #e6e6e6,
+    0.1rem 0.1rem 0.2rem 0.2rem #e6e6e6;
+}
+
+header #navbar .navlist .navitens .button-header:hover {
+  transition: color 0.3s;
+  color: #ffffff;
+  background-color: #95d161;
+  width: 90px;
+  height: 30px;
+  border-radius: 0.8rem;
+}
+
+/* ! estilizando primeira section home */
+
+#section1-home {
+  margin-top: 9.4rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+
+#section1-home .font-home {
+  font-size: 4rem;
+}
+#section1-home .button-section1 {
+  width: 14rem;
+  height: 2.8rem;
+}
+
+#section1-home .button-section1:hover {
+  transition: color 0.3s;
+  color: #ffffff;
+  background-color: #95d161;
+  border-radius: 0.8rem;
+}
+
+#section1-home .title-home {
+  letter-spacing: -0.3rem;
+}
+
+/* ! estilizando segunda section home */
+
+#section2-home {
+  margin-top: 9.4rem;
+}
+
+#section2-home .img-home {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 12rem;
+  gap: 4rem;
+}
+
+#section2-home .img-home .span-section2 {
+  font-weight: 400;
+}
+
+/* ! estilizando section final */
+
+#section-final {
+  margin-top: 9.4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#section-final .span-final {
+  display: flex;
+  justify-content: center;
+  max-width: 1000px;
+}
+
+#section-final .span-final .title-final {
+  width: 40rem;
+  padding-top: 0.2rem;
+  font-size: 0.8rem;
+  font-weight: 700;
+}
